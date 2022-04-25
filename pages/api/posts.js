@@ -6,7 +6,7 @@ const Instagram = require('instagram-web-api');
 
 const FileCookieStore = require('tough-cookie-filestore2');
 
-const cookieStore = new FileCookieStore('./cookies.json');
+const cookieStore = new FileCookieStore('./public/cookies.json');
 
 export default function handler(req, res) {
 
@@ -47,6 +47,11 @@ export default function handler(req, res) {
             }
     
         }
+        
+    }
+
+    if(req.method === 'GET'){
+        res.json({success: true});
     }
 
 }

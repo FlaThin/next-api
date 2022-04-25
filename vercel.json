@@ -1,8 +1,10 @@
 {
     "functions": {
-      "api/posts.js": {
+      "api/hello.js": {
         "includeFiles": "_files/**"
       }
     }
 }
+
+
   
