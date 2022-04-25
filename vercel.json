@@ -1,8 +1,8 @@
 {
     "functions": {
       "api/posts.js": {
-        "includeFiles": "cookie.json"
+        "includeFiles": "_files/**"
       }
     }
-  }
+}
   
